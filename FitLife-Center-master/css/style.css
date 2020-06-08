@@ -1,6 +1,7 @@
 body {
     margin: 0;
 }
+<<<<<<< HEAD
 body{
 background-image: url('https://www.destructoid.com//ul/542431-Fitness%20Boxing.jpg'); 
   background-repeat: no-repeat;
@@ -10,6 +11,8 @@ background-image: url('https://www.destructoid.com//ul/542431-Fitness%20Boxing.j
   color: #202b40;;
 
 }
+=======
+>>>>>>> 4a6a6d3b4372071dfaeeddd423aa93fed3ae610b
 /*for navigation */
 ul.nav__list {
     list-style-type: none;
