@@ -1,59 +1,64 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-=======
-<!-- saved from url=(0118)https://blackboard.uwindsor.ca/bbcswebdav/pid-1312053-dt-content-rid-16290207_1/courses/COMP8347-91-R-2020S/index.html -->
->>>>>>> 4a6a6d3b4372071dfaeeddd423aa93fed3ae610b
-<html lang="en">
-    
-    <head>
-       <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/style.css">
+<html>
+<body>
 
-    </head>
-
-    <body data-gr-c-s-loaded="true">
-        <header>
+<header>
+  <link rel="stylesheet" type="text/css" href="css/style.css?version=1" />
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="active" href="index.html">  Home  </a></li>
                     <li class="nav__item"><a href="about.html"> About </a></li>
                     <li class="nav__item"><a href="classes.html"> Classes    </a></li>
-                    <li class="nav__item"><a href="services.html">Services   </a></li>
+                    <li class="nav__item"><a href="https://blackboard.uwindsor.ca/bbcswebdav/pid-1312053-dt-content-rid-16290207_1/courses/COMP8347-91-R-2020S/services.html">Services   </a></li>
                     <li class="nav__item"><a href="member.html">  Memberships</a></li>
                 </ul>
            </nav>
         </header>
-<<<<<<< HEAD
-	<div style="padding:20px 16px;margin-top:30px;">
-            <h1 style="text-align: center;">Welcome to FitLife Fitness and Training Center!!</h1>
-            <h2>This is the home page</h2>
-            <h3 class="myh3">A smaller heading</h3>
-    	    <hr>
-            <p class="para1"><a href="cardio.html"> Cardio</a> </p>
+<div style="padding:20px 16px;margin-top:30px;">
+<h2>Membership Forms</h2>
 
-		    <p class="para2"><a href="strength.html">Strength</a></p>
-			<p class="para3"><a href="other.html">Other</a></p>		
-	</div>                
-=======
-        
-        <div style="padding:20px 16px;margin-top:30px;">
-            <h1>Welcome to FitLife Fitness and Training Center!!</h1>
-            <h2>This is the home page</h2>
-            <h3 class="myh3">A smaller heading</h3>
-    	    <hr>
-            <p class="para1"><a href="cardio.html"></a> Cardio </p>
+<form action="/submit.html">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="" required><br>
+  
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="" required><br>
+  
+  <label for="lname">Address:</label><br>
+  <input type="text" id="Address" name="Address" value="" required><br><br>
+  
+  <label for="lname">Type  of  Membership:</label><br> 
+  <label for="membership"></label>
+  <select id="membership" name="membership" required>
+    <option value="Choose" selected>Choose</option>
+    <option value="monthly pay-as-you-go">monthly pay-as-you-go</option>
+    <option value="3 months">3 months</option>
+    <option value="6 months" >6 months</option>
+    <option value="12 months">12 months</option>
+  </select>
+  <br> <br> 
+  
+  <label for="lname">Method of Payment:</label><br>  
+  <input type="radio" id="debit" name="payment" value="debit">
+  <label for="debit">Debit</label><br>
+  <input type="radio" id="credit" name="payment" value="credit">
+  <label for="credit">Credit</label><br><br>
+  <input type="checkbox" id="email" name="email" value="email">
+  
+  <label for="email">Want to receive  email  updates  about upcoming new promotions and latest news?</label><br><br>
+  
+  <button onclick="myalert()">
+    Submit
+  </button>
+  <input type="hidden" name="redirect" value="submit.html">
+</form> 
 
-		    <p class="para2"><a href="strength.html">Strength</a></p>
-			<p class="para3"><a href="other.html">Other</a></p>
-		
-
-        </div>
-
->>>>>>> 4a6a6d3b4372071dfaeeddd423aa93fed3ae610b
-        <hr>
-
-    
-</body></html>
+<p>Once you click the "Submit" button, You agree with the Terms and Policies of our company.</p>
+<script> 
+  function myalert() { 
+      alert("Your Order is submitted Successfully!"); 
+  } 
+</script> 
+</div>
+</body>
+</html>
